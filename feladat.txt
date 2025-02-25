@@ -1,0 +1,69 @@
+Feladat leírás
+
+Hozzunk létre egy Neptun alkalmazást. :)
+
+1. Hozzuk létre az Ember absztrakt osztályt a következő mezőkkel:
+	nev - sztring
+	szev - egész szám
+
+A mezők létrehozásánál ügyeljünk a lezártság alapelvének betartására.
+Hozzuk létre a szükséges metódusokat is. (getter, setter)
+
+2. Hozzunk létre konstruktorokat az osztályhoz.
+A paraméter nélküli konstruktor állítson be alapértékeket a mezőknél.
+
+3. Írjuk fölül a toString metódust.
+
+4. Írjuk felül az equals metódust úgy, hogy két ember akkor
+ legyen egyenlő, ha nevük és születési idejük is megegyezik.
+
+5. Hozzuk létre a Tantargy osztályt a következő mezőkkel:
+	nev - szöveges
+    kod - szöveges
+    oktato -szöveges
+    eredmjegy - egész szám
+    kredit - egész szám
+A mezők létrehozásánál ügyeljünk a lezártság alapelvének betartására.
+Hozzuk létre a zsükséges metódusokat is. (getter, setter)
+
+6. Hozzunk létre konstruktorokat az osztályhoz.
+
+7. Írjuk fölül a toString metódust.
+
+8. Írjuk felül az equals metódust úgy, hogy két tantargy akkor
+ legyen egyenlő, ha kódjuk megegyezik.
+
+9. Hozzuk létre a Hallgato osztályt - ami az Ember osztályból öröklődik
+ - a következő mezőkkel:
+    neptunKod - szöveges
+    szak - szöveges
+    evfolyam - egész szám
+    targyakszama - kezdetben legyen az értéke 0
+    tantargyak - 10 elemű Tantárgy objektumokat tartalmazó tömb
+A mezők létrehozásánál ügyeljünk a lezártság alapelvének betartására.
+Hozzuk létre a zsükséges metódusokat is. (getter, setter)
+
+10. Hozzunk létre konstruktorokat az osztályhoz.
+ A paraméter nélküli konstruktor állítson be alapértékeket a mezőknél.
+
+11. Írjuk fölül a toString metódust. Ügyeljünk a tömb kiiratására.
+
+12. Hozzuk létre a HallgatoInterface interfészt a következő metódus
+leírásokkal:
+- tantárgyFelvétel(Tantargy uj) - logikai értékkel térjen vissza
+- tantergyLeadas(Tantargy leadando) - logikai értékkel térjen vissza
+
+13. A Hallgato osztály implementálja a HallgatoInterface interfészt.
+- tantargyFelvetel - bemenő paramétere egy Tantargy osztály beli objektum.
+Ha a hallgató még nem vette fel a tárgyat és még van szabad kapacitása,
+ akkor a tárgy kerüljön bele a tantargyak tömbbe.
+A metódus térjen vissza igaz értékkel, ha sikerült a tantárgy felvétele,
+különben hamissal.
+- tantargyLeadas - bemenő paramétere egy Tantargy osztály beli objektum.
+Ha a hallgató már  felvette a tárgyat, akkor a tárgyat vegyük ki a
+ tömbből. A metódus térjen vissza igaz értékkel,
+ ha sikerült a tantárgy leadása, különben hamissal.
+
+16. Hozzuk létre a Neptun osztályt a main metódussal.
+ Hozzunk létre tantárgyakat és hallgatókat és teszteljük a funkciókat.
+
