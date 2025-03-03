@@ -1,6 +1,8 @@
+package edu.nye.pl2.sokszog;
+
 public abstract class Sokszog {
 
-    private final double[] oldalak;
+    public final double[] oldalak;
 
     protected Sokszog(double[] oldalak) {
         this.oldalak = oldalak;
@@ -14,5 +16,5 @@ public abstract class Sokszog {
         return kerulet;
     }
 
-    abstract double terulet();
+    public abstract double terulet();
 }
