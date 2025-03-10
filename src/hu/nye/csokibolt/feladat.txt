@@ -1,0 +1,85 @@
+Csokibolt feladat
+
+Készítsünk olyan Java alkalmazást, amely segítségével Csokoládét
+ áruló boltok tevékenységét tudjuk bemutatni.
+
+1. Készítsünk egy absztrakt Edesseg osztályt a következő leírás szerint.
+Mezők:
+nev - szöveges
+suly - egész szám, grammban értendő
+ar - egész szám
+
+Az Edesseg osztályhoz készítsük el a megfelelő konstrutorokat
+és biztosítsuk az osztály lezártásgát is.
+
+2. Készítsük el a Csokolade osztályt a következő leírás szerint.
+A Csokolade osztály az Edesseg osztályból öröklődjön.
+További mezői:
+tipus - CsokiTipus enum típus
+toltelek - szöveges
+darab - egész szám
+
+Hozzuk létre a CsokiTipus felsorolás típust.
+A típus három konstans értéket tartalmazzon
+TEJ, ÉT, FEHÉR
+Legyen egy getKaoria() metódusa, amely a megadott típusnak megfelelő
+egész értékű kalóriaértéket ad vissza 100g-ra viszonyítva.
+
+A Csokolade osztályhoz készítsük el a megfelelő konstrutorokat
+és biztosítsuk az osztály lezártásgát is.
+
+3. Írjuk fölül a Csokolade osztály equals metódusát úgy,
+hogy két csokoládé akkor legyen egyenlő,
+ha nevük, súlyuk, típusuk és töltelékük is megegyezik.
+
+4. Írjuk felül a Csokolade osztály toString metódusát,
+ hogy az alap adatokon kívül az összkalória
+,értéket is jelenítse meg.
+
+5. Írjuk meg a CsokoladeInterface interfészt,
+melyet a Csokolade osztály implementáljon.
+A CsokoladeInterface a következő három metódus leírását tartalmazza:
+- aremeles(int ennyivel) - állítsa be új árként az eredeti ár
+ paraméterben megadott számmal megnövelt értékét
+- akcio(int szazalek) - az ár megadott százalék értékkel csökkentett
+ egész értékével tér vissza
+- osszKaloria() - kiszámolja az adott csokoládé össz kalória értékét.
+
+6. Készítsünk egy absztrakt Bolt osztályt a következők szerint.
+Mezők:
+- boltNev - a bolt neve
+- forgotoket - az adott bolt forgótőkéje forintban
+Biztosítsuk az osztály lezártságát éskészítsük el
+ a megfelelő konstrutorokat
+ és biztosítsuk az osztály lezártásgát is.
+
+
+7. Készítsük el a CsokiBolt osztályt amely öröklődjön a Bolt osztályból.
+A további mezői vannak:
+- mennyiseg - osztály szintű egész konstans,
+ a bolt által maximálisan kezelhető csokoládék száma
+- darab - az aktálisan tárolt csokik száma
+- csokik - Csokolade osztály elemeit tartalmazó tömb,
+mely méretét a mennyiseg mező határozza meg
+
+Gondoskodjunk a konstruktorok elkészítéséről és az osztály lezárásáról is.
+
+8. Írjuk felül a toString metódust úgy, hogy jelenítse meg a bolt
+alapvető adatain kívül a teljes raktárkészletet is.
+
+9. Írjuk meg a CsokiBoltInterface interfészt,
+amely a következő függvényeket írja le
+- vesz(Csokolade ezt) - ha a megadott csokoládé még nincs a boltban,
+akkor tegye be a tömbbe, ha benne van, akkor csak adja hozzá a
+darabszámot és az árával csökkentse a forgótőke értékét.
+- elad(Csokolade ezt) - a megadott csokoládéból adja el a megadott számút,
+ ha van annyi csokoládé raktáron. Ellenkező esetben jelezze,
+ hogy nincs olyan vagy annyi csoki a raktáron. Az eladásból származó
+ összeget adja hozzá a bolt forgótőkéjéhez.
+A függvény igazzal tér vissza, ha sikerült az eladás.
+- keres(Csokolade ezt) - megkeres egy adott csokoládét a tömbben.
+Ha benne van, akkor visszatér az adott csokoládéval,
+ha nincs benne, akkor null értékkel tér vissza.
+
+10. Hozzuk létre a CsokiBolt osztály egy példányát,
+ és teszteljük a programunk helyes működését.
