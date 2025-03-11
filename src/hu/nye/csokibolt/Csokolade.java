@@ -68,13 +68,13 @@ public class Csokolade extends Edesseg implements CsokoladeInterface{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Név: " + this.getNev() + "\n");
-        sb.append("Súly: " + this.getSuly() + "\n");
-        sb.append("Ár: " + this.getAr() + "\n");
-        sb.append("Tipus: " + this.getTipus() + "\n");
-        sb.append("Töltelék: " + this.getToltelek() + "\n");
-        sb.append("Darab: " + this.getDarab() + "\n");
-        sb.append("Összkalória: " + "" + "\n");
+        sb.append("Név: " + this.getNev() + "\t");
+        sb.append("Súly: " + this.getSuly() + "\t");
+        sb.append("Ár: " + this.getAr() + "\t");
+        sb.append("Tipus: " + this.getTipus() + "\t");
+        sb.append("Töltelék: " + this.getToltelek() + "\t");
+        sb.append("Darab: " + this.getDarab() + "\t");
+        sb.append("Összkalória: " + osszKaloria() + "\n");
 
         return sb.toString();
     }
