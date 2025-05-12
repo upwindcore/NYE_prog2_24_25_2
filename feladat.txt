@@ -1,0 +1,20 @@
+1. Készítse el a Dokumentum osztályt a könyvtár csomagban az ábra alapján.
+Az osztály adattagjai legyenek privát láthatóságúak és a konstruktorban kapjanak értéket!
+Ha a cím üres, akkor dobjunk kivételt!
+Ha az ár negatív, akkor nullát állítson be!
+Írja meg a lekérdező metódusokat és írjon beállító metódust a leltári szám, raktári szám és az elérhető mezőkhöz!
+2. Írja fölül a toString metódust úgy, hogy az adatokat az alábbi formátumban adja vissza (egy sorban):
+szerző, cím, raktári szám, elérhető
+3. Írja felül az equals() és a hashCode metódusokat! Két dokumentum akkor legyen egyenlő, ha a leltári szám megegyezik!
+4. Az osztály implementálja a Comperable interfészt! A természetes rendezés a szerző, majd a cím, végül a leltári szám szerint történjen!
+5. Származtasson a Dokumentum osztályból egy Könyv osztályt szintén a könyvtár csomagban, az ábra alapján!
+Ha az oldalszám vagy gerincméret kisebb nullánál dobjunk kivételt!
+Az osztály valamennyi adattagja kapjon értéket a konstruktorban és írjon lekérdező metódust hozzájuk.
+6. Írja felül a toString metódust úgy, hogy a fentiek mellett az új mezőket is tartalmazza!
+7. Hozzuk létre a Gyujtemeny generikus interfészt!
+8. Készítse el a Könyvtár osztályt, amely a megjegyzéseknek megfelelően implementálja a Gyujtemeny interfészt Konyv típusparaméterrel!
+A könyvtáraknak legyen nevük!
+Egészítse ki az osztályt egy konstruktorral, amellyel megadható a könyvtár neve, és a gyűjteménye feltölthető egy tömb elemeivel!
+9. A főprogramban olvassa be a billentyűzetről soronként egy-egy könyv vesszővel elválasztott adatait!
+10. Hozzon létre egy könyvtárat és töltse fel a beolvasott könyvekkel.
+11. Írja ki a könyvtár könyveinek átlagárát! Üres könyvtár esetén ügyeljen a nullával osztásra!
